@@ -12,7 +12,11 @@ spring:
   jackson:
     deserialization:
       fail-on-unknown-properties: true
-      
+
+  flyway:
+    url: ${MYSQL_URL}
+    user: ${MYSQL_USERNAME}
+    password: ${MYSQL_PASSWORD}
 com:
   behl:
     cachetropolis:
